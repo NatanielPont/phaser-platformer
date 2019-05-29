@@ -116,7 +116,7 @@ function takeCoin (player, coin) {
   let oldValue = this.value
   this.value = Phaser.Math.Between(1, 6)
 
-  while (oldValue == this.value) {
+  while (oldValue === this.value) {
     this.value = Phaser.Math.Between(1, 6)
   }
 
